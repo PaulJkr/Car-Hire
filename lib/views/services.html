@@ -1,0 +1,35 @@
+<?php
+include 'db.php';
+
+// Fetch cars from the database
+$sql = "SELECT * FROM cars WHERE availability = 1";
+$result = $conn->query($sql); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Available Cars</title>
+  </head>
+  <body>
+    <h1>Available Cars</h1>
+    <table>
+      <tr>
+        <th>Car Model</th>
+        <th>Type</th>
+        <th>Price per Day</th>
+        <th>Action</th>
+      </tr>
+      <?php while ($row = $result->fetch_assoc()) { ?>
+      <tr>
+        <td><?php echo $row['car_model']; ?></td>
+        <td><?php echo $row['car_type']; ?></td>
+        <td><?php echo $row['price_per_day']; ?></td>
+        <td>
+          <a href="booking.php?car_id=<?php echo $row['id']; ?>">Book Now</a>
+        </td>
+      </tr>
+      <?php } ?>
+    </table>
+  </body>
+</html>

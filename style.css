@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Top Bar Styling for Login and Sign Up Buttons */
+.top-bar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #333;
+}
+
+.top-button {
+  color: white;
+  background-color: #4caf50;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.top-button:hover {
+  background-color: #45a049;
+}
+
+/* Header Styling */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #333;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #4caf50;
+}
+
+/* Main Content Section */
+main {
+  padding: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #4caf50;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Form Styling */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
